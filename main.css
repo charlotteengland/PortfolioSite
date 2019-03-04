@@ -2,34 +2,62 @@
    box-sizing: border-box;
 }
 
- body {
+@font-face {
+   font-family: 'karlaregular';
+   src: url('fonts/karla-regular-webfont.woff2') format('woff2'),
+        url('fonts/karla-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+@font-face {
+   font-family: 'asapregular';
+   src: url('fonts/asap-regular-webfont.woff2') format('woff2'),
+        url('fonts/asap-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+body {
     font-size: 20px;
-    text-align: center;
-    color: black;
+    line-height: 26px;
+    font-family: karlaregular;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
 }
 
-nav, footer {
-   padding: 1% 0;
-   background-color: darkblue;
-}
-
-nav {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   z-index: 10;
-}
 header {
    padding 12% 0;
+   color: #0dccc0;
+   line-height: 45px;
+   font-size: 28px;
 }
 
 section {
    min-height: 200px;
    padding: 6% 0;
-   background-color: lightblue;
 }
 
-section:nth-child(even) {
-   background-color: white;
+nav, footer {
+   padding: 5% 0;;
 }
+
+nav li {
+   list-style: none;
+   display: inline-block;
+   text-decoration: underline;
+   color: #0dccc0;
+
+}
+
+/*
+@media screen and (min-width: 700) {
+   body {
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+}
+*/
