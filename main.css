@@ -21,8 +21,8 @@
 }
 
 body {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 44px;
     font-family: karlaregular;
     margin-left: 15%;
     margin-right: 15%;
@@ -31,9 +31,22 @@ body {
 }
 
 h1 {
-   font-size: 60px;
+   font-size: 35px;
+   line-height: 55px;
    text-transform: uppercase;
    color: #F46197;
+}
+
+
+h2 {
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+h2 span {
+   color: #2CA58D;
+   margin-left: 15px;
+
 }
 
 .aboutMe {
@@ -65,23 +78,12 @@ nav li a {
    color: #2CA58D;
 }
 
-h2 {
-   font-size: 20px;
-   text-transform: uppercase;
-}
-
-h2 span {
-   color: #2CA58D;
-   margin-left: 15px;
-
-}
-
 hr {
    display: block;
    margin-top: 0.5em;
    border-color: #042342;
    border-style: inset;
-   border-width: 1px;
+   border-width: 0.5px;
 }
 
 section img {
@@ -99,7 +101,8 @@ section img {
 
 @media screen and (min-width:750px) {
    h1 {
-      font-size: 90px;
+      font-size: 80px;
+      line-height: 100px;
    }
    
    header {
